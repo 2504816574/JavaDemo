@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BookStore02:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookStore02_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BookStore02/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BookStore02" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../../jar/jdbc/commons-dbutils-1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../jar/jdbc/druid-1.0.9/druid-1.0.9.jar" />
+          <element id="library" level="module" name="JUnit4" module-name="BookStore02" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../jar/jdbc/mysql-connector-java-5.1.37-bin.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

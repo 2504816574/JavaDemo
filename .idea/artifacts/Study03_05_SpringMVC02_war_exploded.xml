@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Study03_05_SpringMVC02:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Study03_05_SpringMVC02_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Study03_05_SpringMVC02/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Study03_05_SpringMVC02" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons" />
+          <element id="library" level="project" name="Spring@Local" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

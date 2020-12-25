@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 
+		autowire:根据某种策略自动为非字面量属性赋值
+		autowire="byName|byType"
+		byName:通过属性名和spring容器中bean的id进行比较，若一致则可直接赋值
+		byType:通过spring容器中bean的类型，为兼容性的属性赋值
+			   在使用byType的过程中，要求spring容器中只能有一个能为属性赋值的bean
+		选用建议: 当设置autowire属性，会作用于该bean中所有的非字面量属性，因此谁都不用
+	 -->
+	
+	<bean id="emp" class="ioc.auto.Emp" autowire="byType">
+		<property name="eid" value="1001"/>
+		<property name="ename" value="张三"/>
+	</bean>
+	
+	<bean id="car1" class="ioc.auto.Car">
+		<property name="cid" value="666666"/>
+		<property name="cname" value="霸道"/>
+	</bean>
+	
+<!--	<bean id="car2" class="ioc.auto.Car">
+		<property name="cid" value="8888888"/>
+		<property name="cname" value="奥迪A8"/>
+	</bean>-->
+	
+	<bean id="dept1" class="ioc.auto.Dept">
+		<property name="did" value="11111"/>
+		<property name="dname" value="开发部"/>
+	</bean>
+
+</beans>
